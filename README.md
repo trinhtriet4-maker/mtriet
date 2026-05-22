@@ -10,11 +10,11 @@
             margin:0;
             padding:0;
             box-sizing:border-box;
-            font-family:Arial;
+            font-family:Arial, sans-serif;
         }
 
         body{
-            background:#0f172a;
+            background: linear-gradient(to right, #0f172a, #1e293b);
             color:white;
         }
 
@@ -30,14 +30,19 @@
 
         header h1{
             font-size:60px;
-            margin-bottom:20px;
             color:#38bdf8;
+            margin-bottom:20px;
+        }
+
+        header h2{
+            font-size:30px;
+            margin-bottom:20px;
         }
 
         header p{
-            font-size:22px;
+            font-size:20px;
             max-width:700px;
-            line-height:1.6;
+            line-height:1.8;
         }
 
         .btn{
@@ -48,47 +53,46 @@
             text-decoration:none;
             border-radius:10px;
             font-weight:bold;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:white;
         }
 
         section{
             padding:80px 10%;
         }
 
-        h2{
+        h3{
             font-size:40px;
             margin-bottom:30px;
             color:#38bdf8;
+            text-align:center;
         }
 
-        .about,
-        .skills,
-        .projects{
-            margin-bottom:80px;
-        }
-
-        .skill-list{
-            display:flex;
-            flex-wrap:wrap;
-            gap:15px;
-        }
-
-        .skill{
+        .card{
             background:#1e293b;
-            padding:15px 25px;
-            border-radius:10px;
+            padding:30px;
+            border-radius:20px;
+            margin-bottom:30px;
+            box-shadow:0 0 15px rgba(0,0,0,0.3);
         }
 
-        .project-card{
-            background:#1e293b;
-            padding:25px;
-            border-radius:15px;
-            margin-bottom:20px;
+        ul{
+            list-style:none;
+        }
+
+        ul li{
+            padding:10px 0;
+            font-size:20px;
         }
 
         footer{
             text-align:center;
             padding:30px;
             background:#020617;
+            font-size:18px;
         }
     </style>
 </head>
@@ -96,52 +100,64 @@
 <body>
 
     <header>
-        <h1>Xin chào 👋</h1>
+        <h1>TRỊNH HUỲNH MINH TRIẾT</h1>
+
+        <h2>Học sinh lớp 12C4</h2>
+
         <p>
-            Mình là ABC — Web Developer / Student / Designer
+            Trường Trung Học Phổ Thông Nguyễn Thái Học <br>
+            Năm nay tôi 18 tuổi. <br><br>
+
+            Tôi yêu thích lập trình, nghe nhạc, đi phượt
+            và dạo biển.
         </p>
 
-        <a href="#projects" class="btn">
-            Xem dự án
+        <a href="#about" class="btn">
+            Khám phá thêm
         </a>
     </header>
 
-    <section class="about">
-        <h2>Giới thiệu</h2>
+    <section id="about">
 
-        <p>
-            Mình thích lập trình website và thiết kế giao diện đẹp.
-            Hiện đang học HTML, CSS và JavaScript.
-        </p>
-    </section>
+        <h3>Giới Thiệu</h3>
 
-    <section class="skills">
-        <h2>Kỹ năng</h2>
+        <div class="card">
+            <p style="font-size:22px; line-height:1.8;">
+                Xin chào 👋 <br><br>
 
-        <div class="skill-list">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">GitHub</div>
-        </div>
-    </section>
+                Tôi là <b>Trịnh Huỳnh Minh Triết</b>,
+                hiện là học sinh lớp <b>12C4</b>
+                tại trường <b>THPT Nguyễn Thái Học</b>.
 
-    <section class="projects" id="projects">
-        <h2>Dự án</h2>
-
-        <div class="project-card">
-            <h3>Website Cá Nhân</h3>
-            <p>Trang portfolio đầu tiên bằng HTML/CSS.</p>
+                Tôi đam mê công nghệ và thích khám phá
+                những điều mới mẻ trong cuộc sống.
+            </p>
         </div>
 
-        <div class="project-card">
-            <h3>Landing Page</h3>
-            <p>Thiết kế giao diện giới thiệu sản phẩm.</p>
+        <h3>Sở Thích</h3>
+
+        <div class="card">
+            <ul>
+                <li>🎵 Nghe nhạc</li>
+                <li>🏍️ Đi phượt</li>
+                <li>🌊 Dạo biển</li>
+                <li>💻 Tìm hiểu công nghệ</li>
+            </ul>
         </div>
+
+        <h3>Mục Tiêu</h3>
+
+        <div class="card">
+            <p style="font-size:22px; line-height:1.8;">
+                Cố gắng học tập tốt, phát triển kỹ năng lập trình
+                và trở thành một người thành công trong tương lai.
+            </p>
+        </div>
+
     </section>
 
     <footer>
-        © 2025 - Portfolio của ABC
+        © 2025 - Portfolio của Trịnh Huỳnh Minh Triết
     </footer>
 
 </body>
