@@ -1,1 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
+body{
+    font-family: Arial, sans-serif;
+}
+
+.menu{
+    background:black;
+    padding:15px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-right:30px;
+}
+
+.container{
+    width:800px;
+    margin:40px auto;
+    text-align:center;
+}
+
+h1{
+    letter-spacing:5px;
+    margin-bottom:10px;
+}
+
+.sub{
+    color:gray;
+    font-style:italic;
+    margin-bottom:20px;
+}
+
+.text{
+    text-align:justify;
+    line-height:1.6;
+    margin-bottom:40px;
+}
+
+.members{
+    display:flex;
+    justify-content:space-around;
+}
+
+.member img{
+    width:150px;
+    height:150px;
+}
