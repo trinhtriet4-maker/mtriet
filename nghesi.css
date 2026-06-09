@@ -1,53 +1,14 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+body { font-family: Arial, sans-serif; background: #fff; margin: 0; color: #000; }
 
-body{
-    font-family: Arial, sans-serif;
-}
+nav { background: #0a1628; padding: 12px 20px; display: flex; gap: 24px; align-items: center; }
+nav a { color: #cde4ff; text-decoration: none; font-size: 13px; font-weight: bold; }
+nav span { margin-left: auto; color: #cde4ff; }
 
-.menu{
-    background:black;
-    padding:15px;
-}
+main { max-width: 700px; margin: 40px auto; padding: 0 20px; text-align: center; }
+h1 { font-size: 28px; letter-spacing: 4px; margin-bottom: 6px; color: #0a1628; }
+.sub { font-size: 13px; color: #1565c0; margin-bottom: 20px; }
+.desc { text-align: left; font-size: 14px; line-height: 1.8; margin-bottom: 30px; }
 
-.menu a{
-    color:white;
-    text-decoration:none;
-    margin-right:30px;
-}
-
-.container{
-    width:800px;
-    margin:40px auto;
-    text-align:center;
-}
-
-h1{
-    letter-spacing:5px;
-    margin-bottom:10px;
-}
-
-.sub{
-    color:gray;
-    font-style:italic;
-    margin-bottom:20px;
-}
-
-.text{
-    text-align:justify;
-    line-height:1.6;
-    margin-bottom:40px;
-}
-
-.members{
-    display:flex;
-    justify-content:space-around;
-}
-
-.member img{
-    width:150px;
-    height:150px;
-}
+#members { display: flex; justify-content: center; gap: 40px; }
+#members p { font-size: 13px; margin-bottom: 6px; }
+#members img { width: 150px; height: 180px; object-fit: cover; display: block; border: 2px solid #90caf9; }
